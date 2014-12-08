@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+
+  "name": "Fcuk Sharethrough Colors",
+  "description": "This extension changes ST colors to TL colors",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+  ],
+    "content_scripts": [
+    {
+      "matches": ["http://console.triplelift.com/*", "https://console.triplelift.com/*"],
+      "js": ["js/jquery.js", "js/myscript.js"]
+    }
+  ]
+
+
+
+
+
+}
